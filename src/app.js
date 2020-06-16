@@ -68,8 +68,6 @@ app.post("/repositories/:id/like", (request, response) => {
   let { likes } = repositories[projectIndex];
   likes++;
 
-  console.log(likes);
-
   const project = {
     ...repositories[projectIndex],
     likes
